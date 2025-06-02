@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ViVenDo | Plants vs Zombies 2 | Global</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <meta
+      name="description"
+      content="ViVenDo is a Plants vs Zombies 2 fan project offering exclusive content and game mods. Download now!" />
+    <meta property="og:title" content="ViVenDo | Plants vs Zombies 2" />
+    <meta
+      property="og:description"
+      content="Unlock all features of PvZ2 with ViVenDo. Free and Premium save data downloads." />
+
+    <!-- Tambahan Font PvZ-style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Bangers&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="matrixRain"></canvas>
+    <!-- Scroll Progress Bar -->
+    <div id="loading-progress-bar"></div>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner">
+        <img src="favicon.png" alt="ViVenDo Logo" class="spinner-logo" />
+      </div>
+      <p>Loading ViVenDo...</p>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <div class="nav-logo">ViVenDo</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- Features with dropdown -->
+          <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle" aria-haspopup="true"
+              aria-expanded="false" role="button" tabindex="0">Information ▾</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="#installation">Installation</a></li>
+              <li><a href="#changelog">Changelog</a></li>
+              <li><a href="#gamestab">Games</a></li>
+              <li><a href="#features">Features</a></li>
+            </ul>
+          </li>
+          <li><a href="#download">Download</a></li>
+          <!-- Legalization with dropdown -->
+          <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle" aria-haspopup="true"
+              aria-expanded="false" role="button" tabindex="0">Support ▾</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#legalization">Legalization</a></li>
+              <li><a href="#question">Question</a></li>
+              <li><a href="#privacy">Privacy</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        role="button"
+        tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Hero Section with Parallax Background -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content container">
+        <img src="hero-logo.png" alt="ViVenDo Logo" class="logo" />
+        <h1 class="hero-title">Welcome to ViVenDo</h1>
+        <h3 class="hero-subtitle">
+          The zombies are back in Plants vs. Zombies 2!
+        </h3>
+        <p class="hero-description">
+          Meet, greet and defeat legions of zombies from the dawn of time to the
+          end of days. Amass an army of powerful plants, supercharge them with
+          Plant Food and discover amazing ways to protect your brain. It’s an
+          ever-expanding universe of fun! And zombies – lots and lots of
+          zombies!
+        </p>
+        <a href="#features" class="btn-primary">Explore Game</a>
+      </div>
+    </section>
+
+    <!-- PVZ2 Video Section -->
+<section id="pvz2-video" class="pvz2-video-section container">
+  <h2 class="section-title">Watch Plants vs Zombies 2 In Action</h2>
+  <div class="video-center">
+    <div class="video-box">
+      <iframe
+        src="https://www.youtube.com/embed/uPThTZeSLCc"
+        title="Plants vs Zombies 2 Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+    <section id="about" class="about-game-section container">
+      <h2 class="section-title">About This Game</h2>
+      <div class="about-game-content">
+        <div class="about-game-text">
+          <p>
+            <strong>Plants vs. Zombies™ 2</strong> is an award-winning
+            action-strategy game where you meet, greet, and defeat legions of
+            hilarious zombies — from the dawn of time to the end of days. Grow
+            an army of powerful plants, supercharge them with Plant Food, and
+            protect your brain at all costs.
+          </p>
+
+          <h3><i class="fas fa-seedling"></i> Discover Hundreds of Plants &
+            Zombies</h3>
+          <p>
+            Collect your favorite classics like Sunflower and Peashooter, plus
+            unique new heroes like Lava Guava and Laser Bean. Battle iconic foes
+            like Jetpack Zombie, Mermaid Imp, and even rampaging Zombie
+            Chickens!
+          </p>
+
+          <h3><i class="fas fa-bolt"></i> Grow & Power Up Your Plants</h3>
+          <p>
+            Earn Seed Packets and boost your plants' abilities — increase attack
+            power, reduce recharge time, or unlock special skills. Build an
+            unstoppable lawn defense!
+          </p>
+
+          <h3><i class="fas fa-trophy"></i> Compete in Arena Battles</h3>
+          <p>
+            Test your tactics against players worldwide in real-time Arena
+            challenges. Climb leagues, earn rewards like coins and piñatas, and
+            rise as the ultimate garden guardian.
+          </p>
+
+          <h3><i class="fas fa-globe-americas"></i> Travel Through Space &
+            Time</h3>
+          <p>
+            Explore 11 wild worlds — from Ancient Egypt to the Far Future. With
+            300+ levels, endless zones, mini-games, and daily events like Piñata
+            Parties, the action never stops. But beware... Dr. Zomboss awaits at
+            the end of every era.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="installation" class="install-guidevvd container">
+      <div class="install-container">
+        <h2 class="install-title">How to Install Files (Data Complete +
+          OBB)</h2>
+        <ol class="install-steps">
+          <li>Make sure you have downloaded and installed <strong>Plants vs.
+              Zombies 2</strong> from the Google Play Store.</li>
+          <li>Download the <code>PP.dat</code> file and the
+            <code>main.obb</code> file from the link available on this
+            page..</li>
+          <li>Open the file manager on your Android device.</li>
+          <li>Copy the file <code>PP.dat</code> to the directory:
+            <br><code>Android/data/com.ea.game.pvz2_row/files/</code>
+          </li>
+          <li>Copy the file <code>main.obb</code> to the directory:
+            <br><code>Android/obb/com.ea.game.pvz2_row/</code>
+          </li>
+          <li>Make sure the file is copied correctly and not renamed.</li>
+          <li>Reopen the game <strong>Plants vs. Zombies 2</strong> and all
+            ViVenDo content will be activated automatically, including hidden
+            plants and completed data.</li>
+        </ol>
+        <p class="install-note">
+          ⚠️ <strong>Note:</strong> ViVenDo does not modify APKs. All files are
+          just additional data and are used for entertainment purposes. Backup
+          your original data before replacing files.
+        </p>
+      </div>
+    </section>
+
+    <section id="changelog" class="changelogvvd container">
+      <div class="changelog-container">
+        <h2 class="changelog-title">Changelog / Update Log</h2>
+
+        <div class="changelog-entry">
+          <h3>Version <span id="app-version-changelog"></span> - <span
+              id="changelog-date"></span></h3>
+          <ul>
+            <li>Adding a hidden plant <strong>Sour Shot</strong>.</li>
+            <li>Minor adjustments to the <code>PP.dat</code> file for better
+              compatibility with the latest version of PvZ2.</li>
+            <li>Optimize OBB files to be lighter and more efficient on low-end
+              devices.</li>
+            <li>Fixing the bug where Sour Shot does not appear in some
+              worlds.</li>
+            <li>Visual icon update for several mod plants.</li>
+            <li>Adjustment of the hidden balancing plant to match the difficulty
+              level of the game.</li>
+            <li>Addition of installation guides in Indonesian & English.</li>
+          </ul>
+          <p><strong>Note:</strong> Installing the <code>PP.dat</code> and
+            <code>OBB</code> files does not require root access on your Android
+            device. Just follow the installation guide carefully to ensure the
+            mod runs smoothly.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gamestab" class="gametabvvd container">
+      <h2 class="section-title">Game Versions Available</h2>
+      <div class="gametab-container">
+
+        <!-- Plants vs Zombies 2 -->
+        <div class="gametab-card">
+          <img src="plants-vs-zombies-2.png" alt="Plants Vs Zombies 2"
+            class="icon-img" style="border-radius: 15px;" />
+          <h3 class="plant-title">Plants vs Zombies™ 2</h3>
+          <div class="platform-info">
+            <ul>
+              <li><strong>Official Platform:</strong>
+                <ul>
+                  <li>Android</li>
+                  <li>iOS</li>
+                  <li>Amazon Fire</li>
+                </ul>
+              </li>
+              <li><strong>Not Official Platform:</strong>
+                <ul>
+                  <li>Windows Phone</li>
+                  <li>Windows PC (Emulator)</li>
+                </ul>
+              </li>
+              <li><strong>Never Released For:</strong>
+                <ul>
+                  <li>Console</li>
+                  <li>Steam</li>
+                  <li>Linux</li>
+                </ul>
+              </li>
+              <li><strong>Genre:</strong>
+                <ul>
+                  <li>Strategy</li>
+                  <li>Tower Defense</li>
+                  <li>Casual</li>
+                  <li>Multiplayer</li>
+                  <li>Competitive Multiplayer</li>
+                  <li>Single Player</li>
+                  <li>Stylized</li>
+                  <li>Zombie</li>
+                  <li>Battling</li>
+                  <li>Offline</li>
+                </ul>
+              </li>
+              <li><strong>Note:</strong> The PC version is only available via
+                emulator. There is no official .exe version like Plants vs
+                Zombies™.</li>
+            </ul>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ea.game.pvz2_row"
+              target="_blank" rel="noopener" class="btn-gametabvvd">Download
+              APKs & OBB</a>
+            <a href="#download" class="btn-gametabvvd">Download Save Data</a>
+          </div>
+        </div>
+
+        <!-- PvZ2 Reflourished -->
+        <div class="gametab-card">
+          <img src="plants-vs-zombies-2-reflourished.png"
+            alt="PvZ2 Reflourished"
+            class="icon-img" style="border-radius: 15px;" />
+          <h3 class="plant-title">Plants vs Zombies™ 2: Reflourished</h3>
+          <div class="platform-info">
+            <ul>
+              <li><strong>Official Platform:</strong>
+                <ul>
+                  <li>Android (Modded via Community)</li>
+                </ul>
+              </li>
+              <li><strong>Not Official Platform:</strong>
+                <ul>
+                  <li>Emulator PC Android (Bluestacks, Nox, dll)</li>
+                </ul>
+              </li>
+              <li><strong>Never Released For:</strong>
+                <ul>
+                  <li>iOS</li>
+                  <li>Console</li>
+                  <li>Steam</li>
+                </ul>
+              </li>
+              <li><strong>Genre:</strong>
+                <ul>
+                  <li>Strategy</li>
+                  <li>Tower Defense</li>
+                  <li>Casual</li>
+                  <li>Multiplayer</li>
+                  <li>Competitive Multiplayer</li>
+                  <li>Single Player</li>
+                  <li>Stylized</li>
+                  <li>Zombie</li>
+                  <li>Battling</li>
+                  <li>Offline</li>
+                </ul>
+              </li>
+              <li><strong>Note:</strong> This is a community-modified version of
+                Plants vs Zombies™ 2, not released by EA or PopCap.</li>
+            </ul>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a
+              href="#"
+              class="btn-gametabvvd disabled"
+              onclick="return false;">
+              Download APKs & OBB
+            </a>
+            <a href="#download" class="btn-gametabvvd">Download
+              Save Data</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section container">
+      <h2 class="section-title">Game Features</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <img src="icon-plants.png" alt="Plants Icon" class="icon-img" />
+          <span class="hidden-plant-label">Hidden Plant</span>
+          <h3 class="plant-title">New Plant Sour Shot</h3>
+
+          <section class="plant-section">
+            <h5>Description</h5>
+            <p>
+              Sour Shot is an offensive-type plant that attacks by launching
+              acidic lemon-shaped projectiles that splash in multiple directions
+              upon hitting a target. Each shot bounces and delivers a splash
+              effect to nearby zombies, making it highly effective against
+              crowds. Its projectiles also slow down affected zombies for a few
+              seconds. With a moderate cooldown and relatively low sun cost,
+              Sour Shot is ideal for early-game deployment. The plant has strong
+              synergy with control-type plants due to its ability to maintain
+              attack distance. The acidic effect of its projectiles can also
+              penetrate light defenses like cone and bucket zombies more
+              quickly. When fertilized, Sour Shot unleashes a large lemon rain
+              across an entire row, dealing massive damage and briefly stunning
+              zombies. Its ability to hit multiple zombies at once makes it a
+              reliable crowd control weapon. While not very effective against
+              heavy metal-type zombies like Gargantuars, Sour Shot can
+              significantly slow their movement. It grows quickly and requires
+              minimal space to activate its attacks. Its attack animation is
+              unique, featuring striking green-yellow acid splashes. In
+              long-term defense strategies, Sour Shot can save many support
+              plants thanks to its flexible role. It is also resistant to
+              weather effects such as fog or snow, making it dependable in
+              almost any battlefield. Flying-type zombies are immune to its
+              splash effect, requiring additional anti-air plants. Nonetheless,
+              its combination of area damage, slowing effect, and powerful
+              synergy with plant food makes Sour Shot a strong contender to
+              become a player favorite in upcoming content.
+            </p>
+          </section>
+        </div>
+        <div class="card">
+          <img src="icon-plants-upcoming1.png" alt="Plants Icon"
+            class="icon-img" />
+          <span class="upcoming-label">Upcoming Content</span>
+          <h3 class="plant-title">New Plant Brainstem</h3>
+
+          <section class="plant-section">
+            <h5>Description</h5>
+            <p>
+              Brainstem is a unique support plant that manipulates zombie
+              behavior using psionic waves emitted from its main stem. When
+              planted, Brainstem releases a purple aura that causes nearby
+              zombies to move slower and become easier to control. Its main
+              effect is to confuse zombies, allowing them to attack each other
+              randomly for a few seconds. This plant is highly effective for
+              disrupting zombie formations and creating chaos on the enemy front
+              line. Although it doesn't attack directly, Brainstem plays a major
+              role in survival strategy. Zombies affected by its aura also take
+              additional damage from other plant attacks. The plant has a 3x3
+              area of effect around it, making it most effective when placed at
+              the center of the lawn. When fertilized, Brainstem emits a
+              powerful wave that stuns all zombies on screen for several
+              seconds. This stun effect also temporarily disables zombies'
+              special abilities. Brainstem has a slow planting time and a medium
+              sun cost, balanced with its tactical potential. Its effects do not
+              apply to boss zombies, but still affect elite or shielded ones. It
+              is also immune to mental attacks like those from hypno-zombies,
+              making it resilient in psychological battles. Visually, Brainstem
+              stands out with a glowing brain and pulsing roots that resemble
+              living nerves. This plant pairs well with high-damage plants to
+              maximize its disruption effect. In survival or arena modes,
+              Brainstem can be the key to turning the tide when waves of zombies
+              attack relentlessly. With its ability to influence enemy minds,
+              Brainstem is set to become one of the most strategic support
+              plants in the upcoming Plants vs Zombies 2 content.
+            </p>
+          </section>
+        </div>
+        <div class="card">
+          <img src="icon-plants-upcoming2.png" alt="Plants Icon"
+            class="icon-img" />
+          <span class="upcoming-label">Upcoming Content</span>
+          <h3 class="plant-title">New Plant Lemon-Aid</h3>
+
+          <section class="plant-section">
+            <h5>Description</h5>
+            <p>
+              Lemon-Aid is a healing and protective plant that combines
+              supportive functions with a refreshing area effect. When planted,
+              Lemon-Aid automatically sprays lemon mist forward and sideways,
+              periodically healing nearby plants within its range. Its healing
+              effect increases with level, allowing near-destroyed plants to
+              return to optimal condition. In addition to healing, Lemon-Aid
+              provides a "refresh" effect that accelerates the recharge time of
+              surrounding plants. With a low to medium sun cost, Lemon-Aid is
+              best placed in the second row to support frontline defenses. When
+              fertilized, this plant releases a large citrus wave that heals all
+              plants on the screen and grants them a temporary shield. Zombies
+              affected by the lemon mist suffer a weakened state, reducing their
+              attack power for a few seconds. Lemon-Aid pairs perfectly with
+              frontline plants like Wall-nut or Endurian to extend their
+              durability. Its visual animation is cheerful, featuring light
+              yellow lemon bubbles that glow softly. This plant is also immune
+              to negative weather effects like ice and poison, making it an
+              ideal choice for extreme-themed levels. Lemon-Aid has a fairly
+              fast cooldown, allowing it to be used multiple times in a single
+              session. While it does not attack zombies directly, its healing
+              and strategic boosting effects make it a central synergy plant. In
+              Arena and Battlez modes, Lemon-Aid can be the difference between
+              victory and defeat with its ability to maintain formation
+              stability. Its healing effect also works on summon-type plants
+              like Grave Buster and Potato Mine. With its multifunctional role
+              and refreshing appearance, Lemon-Aid is a strong candidate to
+              become a favorite support plant in the upcoming Plants vs Zombies
+              2 update.
+            </p>
+          </section>
+        </div>
+        <div class="card">
+          <img src="icon-plants-upcoming3.png" alt="Plants Icon"
+            class="icon-img" />
+          <span class="upcoming-label">Upcoming Content</span>
+          <h3 class="plant-title">New Plant Rose</h3>
+
+          <section class="plant-section">
+            <h5>Description</h5>
+            <p>
+              Rose is a magic-type plant capable of manipulating time and
+              transforming zombies into harmless forms. Every few seconds, Rose
+              fires pink magical petals that have a chance to turn regular
+              zombies into cute sheep that walk slowly and cannot attack. Her
+              attack also slows down zombie movement speed, making her ideal for
+              controlling the pace of battle. This transfiguration effect is
+              temporary, but enough to delay and disrupt incoming zombie waves.
+              Rose is most effective when placed in the middle row, as her
+              attacks curve diagonally. When given Plant Food, she casts a
+              powerful area spell that slows all zombies on screen and instantly
+              transforms three random zombies into sheep. While she doesn't deal
+              high damage, her control ability is exceptional and pairs well
+              with offensive plants. Boss zombies or those with heavy armor are
+              immune to transformation, but still affected by her slowing
+              effect. Rose has a moderate cooldown and a reasonably affordable
+              sun cost for a magic plant of her tier. She has an elegant
+              appearance with a glowing petal crown and sparkling star effects
+              when attacking. She's especially useful in strategy and puzzle
+              levels that require precise timing and crowd management. Rose also
+              empowers nearby magic plants, granting a small passive buff within
+              a 3x3 radius. The visual effect of zombies turning into sheep is
+              very satisfying and adds a whimsical charm to the gameplay. In the
+              world of Plants vs Zombies 2, Rose brings a magical touch and
+              advanced strategic value for experienced players.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section container">
+      <h2 class="section-title">Download Package</h2>
+
+      <div class="download-cards">
+        <!-- Free Plan Card -->
+        <div class="card download-card premium">
+          <div class="card-header">
+            <h3 class="plan-title">Plants vs Zombies™ 2</h3>
+            <p class="plan-sub-title">
+              Scroll Down In The Features Section To See What You Will Get!
+            </p>
+            <p class="eventnoticepvz2">
+              🎁 <strong>Free access</strong> available during <span class="highlightpvz2">limited-time events</span> on our <a href="https://t.me/yourgroup" target="_blank">Telegram group</a>.
+            </p>
+          </div>
+          <div class="plan-features-scroll">
+            <ul class="plan-features">
+              <li><i class="fas fa-check-circle"></i> Unlock All Plants</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All Zombies</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All Maps</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All Costume</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All World</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Unlock All Zen Garden Pots
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Unlock All Missions/Levels
+                Completed
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Unlock All Trophies/Awards
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Level Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Mastery Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Defense Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have An Attack Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Sun Cost
+                Of 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately Without "Recharge"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately Without "Cooldown"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately Without "Reload"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have Unique and
+                Complete Costumes
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Currencies Have A Total
+                Of 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Coin
+                Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Gem
+                Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Mint
+                Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Glove For
+                Arena Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Fuel For
+                Penny Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Penny Chase
+                Perk Points Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Wizard Finger" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Pinch Zombie" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Flick Zombie" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Snow Ball" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Flame Thrower" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Vasebreaker Reveal" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Vasebreaker Butter" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Vasebreaker Move" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp Beg
+                Houled Shuffle" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp Beg
+                Houled Shovel" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp Beg
+                Houled Wizard" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Ancient Egypt" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Pirate Seas" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Wild West" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Frostbite Caves" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Lost City" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Far Future" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Dark Ages" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Neon Mixtape Tour" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Jurassic Marsh" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Big Wave Beach" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Modern Day" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Log In And Save Progress To
+                "EA Account" Money Back Guarantee If Banned
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Log In And Save Progress To
+                "Google Play Games" Money Back Guarantee If Banned
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Directly Can Play Adventure
+                Mode "Offline", Penny "Online", and Arena "Online"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Early access to the latest
+                updates, as well as all exclusive premium content
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Three accounts in one save
+                data file, each with unique features
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Special OBB file that
+                includes hidden plants
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> OBB Editor to facilitate
+                experiments and modifications
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Change the account/profile
+                name as requested — free of charge
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Experience playing without
+                ads and without access restrictions
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Access to an exclusive group
+                for premium members for discussions on tips & tricks
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> And There Are Still Many
+                Other Interesting Features That You Can Get
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="btn-download premium"
+            id="whatsappBtn"
+            onclick="changeButtonText(event)">
+            IDR 15.000
+          </a>
+        </div>
+
+        <!-- Premium Plan Card -->
+        <div class="card download-card premium">
+          <div class="card-header">
+            <h3 class="plan-title">Plants vs Zombies™ 2: Reflourished</h3>
+            <p class="plan-sub-title">
+              Scroll Down In The Features Section To See What You Will Get!
+            </p>
+            <p class="eventnoticepvz2">
+              🎁 <strong>Free access</strong> available during <span class="highlightpvz2">limited-time events</span> on our <a href="https://t.me/yourgroup" target="_blank">Telegram group</a>.
+            </p>
+          </div>
+          <div class="plan-features-scroll">
+            <ul class="plan-features">
+              <li><i class="fas fa-check-circle"></i> Unlock All Plants</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All Zombies</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All Maps</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All Costume</li>
+              <li><i class="fas fa-check-circle"></i> Unlock All World</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Unlock All Zen Garden Pots
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Unlock All Missions/Levels
+                Completed
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Unlock All Trophies/Awards
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Level Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Mastery Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Defense Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have An Attack Of
+                2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have A Sun Cost
+                Of 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately Without "Recharge"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately Without "Cooldown"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Can Be Used
+                Immediately Without "Reload"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Plants Have Unique and
+                Complete Costumes
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> All Currencies Have A Total
+                Of 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Coin
+                Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Gem
+                Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Mint
+                Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Glove For
+                Arena Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Fuel For
+                Penny Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "Penny Chase
+                Perk Points Currency" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Wizard Finger" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Pinch Zombie" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Flick Zombie" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Snow Ball" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Flame Thrower" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Vasebreaker Reveal" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Vasebreaker Butter" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp
+                Vasebreaker Move" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp Beg
+                Houled Shuffle" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp Beg
+                Houled Shovel" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Large Amount of "PowerUp Beg
+                Houled Wizard" 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Ancient Egypt" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Pirate Seas" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Wild West" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Frostbite Caves" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Lost City" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Far Future" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Dark Ages" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Neon Mixtape Tour" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Jurassic Marsh" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Big Wave Beach" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> The Endless Zone Level in
+                the "Modern Day" World Has Reached 2047483640
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Log In And Save Progress To
+                "EA Account" Money Back Guarantee If Banned
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Log In And Save Progress To
+                "Google Play Games" Money Back Guarantee If Banned
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Directly Can Play Adventure
+                Mode "Offline", Penny "Online", and Arena "Online"
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Early access to the latest
+                updates, as well as all exclusive premium content
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Three accounts in one save
+                data file, each with unique features
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Special OBB file that
+                includes hidden plants
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> OBB Editor to facilitate
+                experiments and modifications
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Change the account/profile
+                name as requested — free of charge
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Experience playing without
+                ads and without access restrictions
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Access to an exclusive group
+                for premium members for discussions on tips & tricks
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> And There Are Still Many
+                Other Interesting Features That You Can Get
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="btn-download premium"
+            id="whatsappBtn"
+            onclick="changeButtonText(event)">
+            IDR 10.000
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section container">
+      <h2 class="section-title">What Players Say</h2>
+
+      <div class="testimonial-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="ulasan-bagas.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              Fitur Free-nya aja udah gila banget! Semua tanaman dan zombie
+              kebuka tanpa ribet. Tapi setelah nyobain Premium, baru kerasa
+              banget sensasi game-nya jadi total beda. Worth it banget
+              upgrade-nya!
+            </p>
+            <div class="testimonial-author">
+              <img src="user1.jpg" class="author-img" />
+              <div>
+                <strong>Bagas Pranata</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="ulasan-mawar.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              Aku awalnya pakai yang Free, tapi penasaran upgrade ke Premium.
+              Ternyata bisa main semua dunia, semua kostum, dan mata uangnya gak
+              abis-abis. Main PvZ2 jadi kaya punya dunia sendiri!
+            </p>
+            <div class="testimonial-author">
+              <img src="user2.jpg" class="author-img" />
+              <div>
+                <strong>Mawar Salsabila</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="ulasan-raka.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              Layanan pelanggannya luar biasa cepat! Baru beberapa menit, akun
+              Premium udah dikirim lengkap dengan nama profil sesuai request.
+              Profesional banget.
+            </p>
+            <div class="testimonial-author">
+              <img src="user3.jpg" class="author-img" />
+              <div>
+                <strong>Raka Mahendra</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="ulasan-yuna.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              プレミアム版を使ってから、PvZ2の世界がまるで変わった！植物のコスチュームも可愛くて、エンドレスゾーンも解放されていて大満足です。
+            </p>
+            <div class="testimonial-author">
+              <img src="user4.jpg" class="author-img" />
+              <div>
+                <strong>Yuna Hikari</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="ulasan-keira.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              無料版でも十分楽しかったけど、プレミアムにするとまさにフルパッケージ。全ての植物、コイン、ジェム…全部MAXで、最強感ハンパない！
+            </p>
+            <div class="testimonial-author">
+              <img src="user5.jpg" class="author-img" />
+              <div>
+                <strong>Keira Sana</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="ulasan-ayunda.jpg"
+              class="testimonial-gambar"
+              alt="Foto" />
+            <p class="testimonial-text">
+              Yang paling aku suka dari ViVenDo itu datanya lengkap banget, dan
+              yang Premium tuh bisa langsung main offline juga! Ga perlu tunggu
+              lama, langsung action!
+            </p>
+            <div class="testimonial-author">
+              <img src="user6.jpg" class="author-img" />
+              <div>
+                <strong>Ayunda Sekar</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="ulasan-wei.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              免费版很棒，所有植物和僵尸都解锁了。但我更推荐高级版，功能更全面，而且还有隐藏植物和专属配置，非常划算。
+            </p>
+            <div class="testimonial-author">
+              <img src="user7.jpg" class="author-img" />
+              <div>
+                <strong>Wei Junhao</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="ulasan-meilin.jpg"
+              class="testimonial-gambar"
+              alt="Foto" />
+            <p class="testimonial-text">
+              购买了高级版之后，体验提升了一个档次。存档修改精致，界面友好，还有客服快速响应，非常专业！
+            </p>
+            <div class="testimonial-author">
+              <img src="user8.jpg" class="author-img" />
+              <div>
+                <strong>Meilin Xiaomei</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="ulasan-mason.jpg" class="testimonial-gambar" alt="Foto" />
+            <p class="testimonial-text">
+              Honestly, the Free version already gives you a ton of value. But
+              the Premium pack? Absolute game-changer. Everything maxed out, no
+              limits, and smooth offline play.
+            </p>
+            <div class="testimonial-author">
+              <img src="user9.jpg" class="author-img" />
+              <div>
+                <strong>Mason Liam</strong>
+                <span>Premium Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal & Trust Badges -->
+    <section id="legalization" class="trust-badges container">
+      <h2 class="section-title">Trust & Legal Notice</h2>
+      <div class="badges-container">
+        <div class="badge">
+          <i class="fas fa-user-shield"></i>
+          <div>
+            <strong>Fan Project</strong>
+            <p>
+              This website is an independent, non-commercial fan project and is
+              not affiliated with, endorsed by, or sponsored by Electronic Arts
+              (EA) or PopCap Games.
+            </p>
+          </div>
+        </div>
+        <div class="badge">
+          <i class="fas fa-lock"></i>
+          <div>
+            <strong>100% Safe Downloads</strong>
+            <p>
+              All downloadable files have been thoroughly scanned to ensure they
+              are free from malware, viruses, or tracking components. They are
+              safe for personal use.
+            </p>
+          </div>
+        </div>
+        <div class="badge">
+          <i class="fas fa-check-circle"></i>
+          <div>
+            <strong>Verified Modded Data</strong>
+            <p>
+              This saved data has been modified by community members and
+              carefully reviewed and verified by qualified testers to ensure its
+              accuracy and integrity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="question" class="premium-info">
+      <h2>Why Pay If There Is a Free Version?</h2>
+      <p>
+        Although a free version is available,
+        <strong>Paid Save Data</strong> offers several additional benefits that
+        you will not find in the free version, among others.:
+      </p>
+
+      <ul>
+        <li>
+          Early access to the latest updates, as well as all exclusive premium
+          content.:
+          <ul>
+            <li>
+              Three accounts in one save data file, each with unique features
+            </li>
+            <li>Special OBB file that includes hidden plants</li>
+            <li>OBB Editor to facilitate experiments and modifications</li>
+            <li>
+              Change the account/profile name as requested —
+              <em>free of charge</em>
+            </li>
+            <li>
+              Experience playing without ads and without access restrictions
+            </li>
+          </ul>
+        </li>
+        <li>
+          Direct support to developers:
+          <ul>
+            <li>
+              Access to an exclusive group for premium members for discussions
+              on tips & tricks.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Privacy Policy and Terms Section -->
+    <section id="privacy" class="privacy-section container">
+      <h2 class="section-title">Privacy Policy & Terms of Service</h2>
+
+      <article>
+        <h3>Privacy Policy</h3>
+        <p>
+          We highly value your privacy. This policy explains how your personal
+          data is collected, used, and protected when using ViVenDo.
+        </p>
+        <h4>Information We Collect</h4>
+        <ul>
+          <li>
+            Email address and related contact details submitted during
+            subscription or inquiry.
+          </li>
+          <li>
+            Anonymous usage data to improve site functionality and user
+            experience.
+          </li>
+        </ul>
+        <h4>How We Use Your Information</h4>
+        <ul>
+          <li>
+            To deliver important updates regarding downloads, premium content,
+            or new features.
+          </li>
+          <li>
+            To enhance your interaction with ViVenDo through tailored
+            experiences.
+          </li>
+        </ul>
+        <h4>Data Security</h4>
+        <p>
+          We apply industry-standard security protocols to safeguard your
+          information and ensure it is not misused, lost, or accessed without
+          authorization.
+        </p>
+      </article>
+
+      <article>
+        <h3>Terms of Service</h3>
+        <p>
+          By accessing and using this website, you agree to the following terms
+          and conditions.
+        </p>
+        <h4>Usage License</h4>
+        <p>
+          All downloadable content provided by ViVenDo is for personal,
+          non-commercial use only. Redistribution or resale is strictly
+          prohibited.
+        </p>
+        <h4>Disclaimer</h4>
+        <p>
+          ViVenDo is an independent fan-made project. We are not affiliated with
+          or endorsed by EA or PopCap Games. All trademarks are property of
+          their respective owners.
+        </p>
+        <h4>Limitation of Liability</h4>
+        <p>
+          We are not liable for any loss, damage, or consequences resulting from
+          the use of modified game data or the website itself.
+        </p>
+        <h4>Updates to This Policy</h4>
+        <p>
+          We may update our Privacy Policy or Terms of Service at any time.
+          Please review this section periodically.
+        </p>
+      </article>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">
+          Have questions or feedback? Send us a message directly via WhatsApp.
+        </p>
+
+        <form id="whatsappForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Via WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; <span id="year"></span> ViVenDo | Plants vs Zombies 2. All rights
+        reserved. | <a href="#privacy">Privacy Policy</a> |
+        <a href="#privacy">Terms of Service</a> | <span id="app-version"></span>
+      </p>
+    </footer>
+
+    <!-- Scroll Buttons -->
+    <button id="scroll-top-btn" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button id="scroll-down-btn" aria-label="Scroll to bottom">
+      <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <div class="social-bubble">
+      <a
+        href="https://wa.me/6285706800428"
+        target="_blank"
+        class="social-icon whatsapp"
+        title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a
+        href="https://www.youtube.com/@ViVienDoChannel"
+        target="_blank"
+        class="social-icon youtube"
+        title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a
+        href="https://t.me/viviendochannel"
+        target="_blank"
+        class="social-icon telegram"
+        title="Telegram">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+    </div>
+
+    <div id="toastNotification" class="toast">
+      <p>🔔 Please Subscribe YT:@ViVienDoChannel</p>
+      <button onclick="closeToast()">×</button>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
